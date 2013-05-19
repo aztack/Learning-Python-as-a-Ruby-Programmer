@@ -4,6 +4,7 @@ Learning-Python-as-a-Ruby-Programmer
 体会Python的设计与Ruby的不同。使用Python时Be Pythonic，使用Ruby时Go The Ruby Way。
 工具箱里多个顺手的工具总是好的。
 
+```python
 >>> import this
 The Zen of Python, by Tim Peters
 
@@ -28,7 +29,7 @@ Although never is often better than *right* now.
 If the implementation is hard to explain, it's a bad idea.
 If the implementation is easy to explain, it may be a good idea.
 Namespaces are one honking great idea -- let's do more of those!
-
+```
 
 在ruby的irb中可以方便的查询类/模块的方法：
 
