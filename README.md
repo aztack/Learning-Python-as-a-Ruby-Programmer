@@ -1,6 +1,9 @@
 Learning-Python-as-a-Ruby-Programmer
 ====================================
 
+设计哲学
+--------
+
 体会Python的设计与Ruby的不同。使用Python时Be Pythonic，使用Ruby时Go The Ruby Way。
 在比较中你会发现，完成一个功能时，Ruby有很多方法可以选择。有的方法还有别名。而Python中，大多数情况下只有一种’显而易见‘的实现方式。
 
@@ -31,6 +34,9 @@ If the implementation is easy to explain, it may be a good idea.
 Namespaces are one honking great idea -- let's do more of those!
 ```
 
+查看可用函数 
+-----------
+
 在ruby的irb中可以方便的查询类/模块的方法：
 
 ```ruby
@@ -54,7 +60,6 @@ irb(main):014:0> String.ancestors
 
 Python的Interactive Shell中也有类似的方法：
 
-列出
 ```python
 >>> help
 Type help() for interactive help, or help(object) for help about object.
@@ -79,6 +84,11 @@ dir(...)
 >>> dir()
 ['__builtins__', '__doc__', '__name__', '__package__']
 ```
+
+[Python Built-in Functions](http://docs.python.org/2.7/library/functions.html)
+
+自动完成
+--------
 
 在IRB中启用TAB自动完成：
 ```ruby
