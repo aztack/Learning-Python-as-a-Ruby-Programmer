@@ -1,12 +1,12 @@
-Learning-Python-as-a-Ruby-Programmer
-====================================
+给Ruby程序员的Python学习小册(Learning Python as a Ruby Programmer)
+==================================================================
 
 设计哲学
 --------
 Ruby:
 > Matsumoto has said that Ruby is designed for programmer productivity and fun, following the principles of good user interface design.[27] He stresses that systems design needs to emphasize human, rather than computer, needs
 
-[Ruby设计哲学](http://en.wikipedia.org/wiki/Ruby_(programming_language)#Philosophy)
+[Ruby设计哲学](http://en.wikipedia.org/wiki/Ruby_\(programming_language\))
 
 Python:
 
