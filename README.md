@@ -2,7 +2,7 @@ Learning-Python-as-a-Ruby-Programmer
 ====================================
 
 体会Python的设计与Ruby的不同。使用Python时Be Pythonic，使用Ruby时Go The Ruby Way。
-工具箱里多个顺手的工具总是好的。
+在比较中你会发现，完成一个功能时，Ruby有很多方法可以选择。有的方法还有别名。而Python中，大多数情况下只有一种’显而易见‘的实现方式。
 
 ```python
 >>> import this
