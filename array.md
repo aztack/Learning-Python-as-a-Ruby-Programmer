@@ -26,6 +26,32 @@ str', 'sum', 'super', 'tuple', 'type', 'unichr', 'unicode', 'vars', 'xrange', 'z
 >>>
 ```
 
+创建
+----
+
+```ruby
+numbers = [1,2,3]
+words = %w[jack rose mike]
+```
+
+```python
+numbers = [1,2,3]
+words = ['jack','rose','mike']
+```
+
+长度
+----
+
+```ruby
+number.size
+number.length
+number.count
+```
+
+```python
+len(number)
+```
+
 
 遍历
 ----
@@ -53,6 +79,7 @@ Python:
 ```
 
 映射(map)
+---------
 
 Ruby:
 ```ruby
@@ -66,5 +93,32 @@ Python:
 
 ```python
   [item * 2 for item in [1,2,3]]
+```
+
+排序
+----
+
+Ruby:
+```ruby
+[3,2,1].sort # return new sorted array
+[3,2,1].sort! # in place sort
+[2,1,3].sort_by!{|x|-x} # in place sort to [3,2,1]
+[2,1,3].sort_by{|x|-x} # retur new array [3,2,1]
+```
+Python:
+sort(...)
+    L.sort(cmp=None, key=None, reverse=False) -- stable sort *IN PLACE*;
+    cmp(x, y) -> -1, 0, 1
+```python
+sorted([3,2,1]) # return new sorted array
+[3,2,1].sort() # inplace sort
+
+def negate(x,y):
+ return y-x
+ 
+[2,1,3].sort(cmp=negate) # inplace sort to [3,2,1]
+sorted([2,1,3],cmp=negate) #retur new list [3,2,1]
+
+sorted([2,1,3],cmp=lambda x,y: y-x)
 ```
 
