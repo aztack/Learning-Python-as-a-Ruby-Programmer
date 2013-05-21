@@ -41,4 +41,28 @@ Python:
   s[2:3] == "l"
   s[2:] == "llo world!"
   s[2:-1] == "llo world"
+  #
+  #
+  #
+  re.compile(r'e.*?o').findall(s) == "ello"
 ```
+
+转化为数组
+----------
+
+```ruby
+ s = "hello world!"
+ s.split == ["hello","world!"]
+ '1 2 3 4'.split(' ',2) == ["1", "2 3 4"]
+ 'hello'.split('') == ["h", "e", "l", "l", "o"]
+```
+
+```python
+ s = "hello world!"
+ s.split() == ['hello', 'world!']
+ '1 2 3 4'.split(' ',2) == ['1', '2', '3 4']
+ [c for c in 'hello'] == ['h', 'e', 'l', 'l', 'o']
+```
+
+遍历
+----
