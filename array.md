@@ -43,13 +43,13 @@ words = ['jack','rose','mike']
 ----
 
 ```ruby
-number.size
-number.length
-number.count
+number.size == 3
+number.length == 3
+number.count == 3
 ```
 
 ```python
-len(number)
+len(number) == 3
 ```
 
 
@@ -83,7 +83,7 @@ Python:
 
 Ruby:
 ```ruby
-  [1,2,3].map{|item| item * 2}
+  [1,2,3].map{|item| item * 2} #=> [2,4,6]
 ```
 
 Python:
@@ -92,7 +92,7 @@ Python:
 [Python: List Comprehensions](http://www.secnetix.de/olli/Python/list_comprehensions.hawk)
 
 ```python
-  [item * 2 for item in [1,2,3]]
+  [item * 2 for item in [1,2,3]] #=> [2,4,6]
 ```
 
 排序
@@ -100,8 +100,8 @@ Python:
 
 Ruby:
 ```ruby
-[3,2,1].sort # return new sorted array
-[3,2,1].sort! # in place sort
+[3,2,1].sort # return new sorted array [1,2,3]
+[3,2,1].sort! # in place sort [1,2,3]
 [2,1,3].sort_by!{|x|-x} # in place sort to [3,2,1]
 [2,1,3].sort_by{|x|-x} # retur new array [3,2,1]
 ```
@@ -119,6 +119,6 @@ def negate(x,y):
 [2,1,3].sort(cmp=negate) # inplace sort to [3,2,1]
 sorted([2,1,3],cmp=negate) #retur new list [3,2,1]
 
-sorted([2,1,3],cmp=lambda x,y: y-x)
+sorted([2,1,3],cmp=lambda x,y: y-x) #=>[3,2,1]
 ```
 
