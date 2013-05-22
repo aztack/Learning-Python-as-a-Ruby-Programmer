@@ -122,3 +122,17 @@ sorted([2,1,3],cmp=negate) #retur new list [3,2,1]
 sorted([2,1,3],cmp=lambda x,y: y-x) #=>[3,2,1]
 ```
 
+Join
+----
+
+Ruby:
+Ruby中join是Array的实例方法，并且在join时会自动调用对象的to_s方法
+```ruby
+[1,2,3,'a',{a:1}].join(',')
+```
+
+Python:
+Python中的join是str的实例方法，在join时不会自动将对象转换为字符串，需要显示调用str来转换。
+```python
+",".join(str(n) for n in [1,2,3,'a',{'a':1}])
+```
