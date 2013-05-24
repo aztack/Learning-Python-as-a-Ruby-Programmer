@@ -113,3 +113,10 @@ readline.parse_and_bind('tab:complete')
 然后在对应的.pythonrc中写入上面的代码。这样就不用每次都输入了
 
 [设置参考](http://www.razorvine.net/blog/user/irmen/article/2004-11-22/17)
+
+Update: 10:48 2013/5/24
+-----------------------
+推荐Ruby和Python的两个支持自动完成、代码高亮的Shell:
+
+- [Pry is a powerful alternative to the standard IRB shell for Ruby.](https://github.com/pry/pry)
+- [bpython is a fancy interface to the Python interpreter for Linux, BSD, OS X and Windows](http://www.bpython-interpreter.org/)
