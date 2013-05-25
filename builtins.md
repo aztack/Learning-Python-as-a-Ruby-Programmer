@@ -9,7 +9,7 @@
 数学、数字相关
 --------------
 
-``python
+```python
 abs
 divmod
 max
@@ -25,6 +25,24 @@ float
 int
 long
 complex
+cmp
+```
+
+abs:
+```python
+abs(1) == 1
+abs(-3) == -3
+abs(-3.14) == 3.14
+abs(complex(3,4)) == 5.0
+```
+
+cmp:
+```python
+cmp(1,1) == 0
+cmp(1,2) == -1
+cmp(2,1) == 1
+cmp('a','b') == -1
+cmp('aa','ab') == -1
 ```
 
 
