@@ -26,6 +26,11 @@ str', 'sum', 'super', 'tuple', 'type', 'unichr', 'unicode', 'vars', 'xrange', 'z
 >>>
 ```
 
+Python由一个创建iterator的模块：
+
+[itertools — Functions creating iterators for efficient looping](http://docs.python.org/2/library/itertools.html)
+
+
 创建
 ----
 
@@ -93,6 +98,22 @@ Python:
 
 ```python
   [item * 2 for item in [1,2,3]] #=> [2,4,6]
+```
+
+Python中的
+[map](http://docs.python.org/2/library/functions.html#map)
+/[itertools.imap](http://docs.python.org/2/library/itertools.html#itertools.imap)
+/[itertools.starmap, *map](http://docs.python.org/2/library/itertools.html#itertools.starmap)
+
+```python
+a = [-1,-2,-3]
+b = [2,3,4]
+map(abs,a) === [1,2,3]
+map(pow,a,b) === [1,-8,81]
+map(None,a,b) === [(-1,2),(-2,3),(-3,4)]
+list(itertools.imap(None,[1,2],[3])) === [(1,3)]
+list(map(None,[1,2],[3])) === [(1,3),(2,None)]
+list(itertools.starmap(pow,[(-1,2),(-2,3),(-3,4)])) === [1,-8,81]
 ```
 
 排序
