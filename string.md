@@ -15,6 +15,7 @@ Python:
  exclaimation = "!"
  who = '"world"'
  s = "hello {0}{1}".format(who,exclaimation) #用format方法格式化字符串，也可以写成
+ #s = "hello {}{0}".format(who,exclaimation) #error
  #s = "hello %s%s" % (who,exclaimation)
 ```
 
@@ -64,5 +65,61 @@ Python:
  [c for c in 'hello'] == ['h', 'e', 'l', 'l', 'o']
 ```
 
+重复
+----
+
+Ruby:
+
+```ruby
+"=" * 5 == "====="
+
+5 * "="
+#TypeError: String can't be coerced into Fixnum
+
+class ::String
+  def coerce(other)
+    [self,other]
+  end
+end
+
+5 * "=" == "====="
+```
+
+Python:
+
+```python
+5 * "=" == '====='
+"=" * 5 == '====='
+```
+
 遍历
 ----
+
+Ruby:
+```ruby
+ s = "hello world!"
+ s.each_char{|c| print(c) }
+ 
+ for c in s do;print(c);end
+ #NoMethodError: undefined method `each' for "asdf":String
+ 
+ def ::String
+   def each
+     each_char{|c|yield c}
+   end
+ end
+ 
+ for c in s do;print(c);end #=> "asdf"
+```
+
+Python:
+```python
+import sys;
+s = "hello world!"
+for c in s:
+ sys.stdout.write(c)
+ 
+from __future__ import print_function
+for c in s:
+ print(c,end='')
+```
