@@ -2,6 +2,7 @@ HTTP
 ====
 
 获取页面
+--------
 
 Ruby:
 
@@ -28,3 +29,20 @@ addinforurl = urllib.urlopen("http://www.google.com") #<class urllib.addinfourl 
 html = addinforurl.read()
 ```
 
+HTTP Request/Response
+---------------------
+
+TODO:
+
+Ruby:
+
+Python:
+
+Proxy
+-----
+
+TODO:
+
+Ruby:
+
+Python:
