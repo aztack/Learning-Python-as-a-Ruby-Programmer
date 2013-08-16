@@ -120,3 +120,9 @@ Update: 10:48 2013/5/24
 
 - [Pry is a powerful alternative to the standard IRB shell for Ruby.](https://github.com/pry/pry)
 - [bpython is a fancy interface to the Python interpreter for Linux, BSD, OS X and Windows](http://www.bpython-interpreter.org/)
+- 
+
+Update: 11:00 2013/08/16
+------------------------
+[Interpreted Languages: Perl, PHP, Python, Ruby (Sheet One)
+a side-by-side reference sheet](http://hyperpolyglot.org/scripting)
